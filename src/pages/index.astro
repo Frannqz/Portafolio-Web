@@ -2,9 +2,16 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Badge from "../components/Badge.astro";
+import LinkedIn from "../components/icons/LinkedIn.astro";
+import GitHub from "../components/icons/GitHub.astro";
+import Email from "../components/icons/Email.astro";
+import SocialPill from "../components/SocialPill.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout
+	title="Portafolio de Franco"
+	description="Desarrollador Web en busca de trabajo"
+>
 	<main>
 		<section class="w-full mx-auto lg:w-[740px] py-44">
 			<img
@@ -29,7 +36,22 @@ import Badge from "../components/Badge.astro";
 				>
 			</h2>
 
-			<ul></ul>
+			<nav class="flex gap-x-5 mt-8">
+				<SocialPill href="https://www.linkedin.com/in/franqz">
+					<LinkedIn class="size-6" />
+					 Linkedin
+				</SocialPill>
+
+				<SocialPill href="https://github.com/Frannqz">
+					<GitHub class="size-6" />
+					 GitHub
+				</SocialPill>
+
+				<SocialPill href="https://github.com/Frannqz">
+					<Email class="size-6" />
+					 franqzdev@gmail.com
+				</SocialPill>
+			</nav>
 		</section>
 	</main>
 </Layout>
