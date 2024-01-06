@@ -19,6 +19,10 @@ const { title, description } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+			rel="stylesheet"
+		/>
 	</head>
 
 	<body class="relative text-black dark:text-white">
@@ -31,6 +35,9 @@ const { title, description } = Astro.props;
 		<slot />
 		<Footer />
 	</body>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"
+	></script>
 </html>
 
 <style is:global>
